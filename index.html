@@ -94,6 +94,10 @@
                     <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
                     إعادة التقاط
                 </button>
+                <button id="cancelCamera" class="btn-secondary rounded-full py-2 px-6 font-bold text-lg flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    إلغاء
+                </button>
             </div>
 
             <form id="reportForm" class="hidden animate__animated animate__fadeIn">
@@ -148,6 +152,7 @@
         const preview = document.getElementById('preview');
         const captureBtn = document.getElementById('capture');
         const retakeBtn = document.getElementById('retake');
+        const cancelCameraBtn = document.getElementById('cancelCamera');
         const captureButtons = document.getElementById('captureButtons');
         const reportForm = document.getElementById('reportForm');
         const recentReports = document.getElementById('recentReports');
@@ -205,6 +210,14 @@
             video.classList.remove('hidden');
             preview.classList.add('hidden');
             reportForm.classList.add('hidden');
+        });
+
+        cancelCameraBtn.addEventListener('click', () => {
+            video.classList.add('hidden');
+            captureButtons.classList.add('hidden');
+            if (stream) {
+                stream.getTracks().forEach(track => track.stop());
+            }
         });
 
         reportForm.addEventListener('submit', (e) => {
