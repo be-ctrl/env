@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البيئة العراقية - معًا لحماية طبيعتنا</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f0f9f0;
+            color: #2c3e50;
+        }
+        
+        .hero-pattern {
+            background-color: #2ecc71;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%2327ae60' fill-opacity='0.4'%3E%3Cpath d='M0 0h40v40H0V0zm40 40h40v40H40V40zm0-40h2l-2 2V0zm0 4l4-4h2l-6 6V4zm0 4l8-8h2L40 10V8zm0 4L52 0h2L40 14v-2zm0 4L56 0h2L40 18v-2zm0 4L60 0h2L40 22v-2zm0 4L64 0h2L40 26v-2zm0 4L68 0h2L40 30v-2zm0 4L72 0h2L40 34v-2zm0 4L76 0h2L40 38v-2zm0 4L80 0v2L42 40h-2zm4 0L80 4v2L46 40h-2zm4 0L80 8v2L50 40h-2zm4 0l28-28v2L54 40h-2zm4 0l24-24v2L58 40h-2zm4 0l20-20v2L62 40h-2zm4 0l16-16v2L66 40h-2zm4 0l12-12v2L70 40h-2zm4 0l8-8v2L74 40h-2zm4 0l4-4v2L78 40h-2zm4 0v2L80 40h-2zM0 2L8 0H6L0 6V2zm0 4L12 0H10L0 10V6zm0 4L16 0H14L0 14V10zm0 4L20 0H18L0 18V14zm0 4L24 0H22L0 22V18zm0 4L28 0H26L0 26V22zm0 4L32 0H30L0 30V26zm0 4L36 0H34L0 34V30zm0 4L40 0H38L0 38V34zm0 4L44 0H42L0 42V38zm0 4L48 0H46L0 46V42zm0 4L52 0H50L0 50V46zm0 4L56 0H54L0 54V50zm0 4L60 0H58L0 58V54zm0 4L64 0H62L0 62V58zm0 4L68 0H66L0 66V62zm0 4L72 0H70L0 70V66zm0 4L76 0H74L0 74V70zm0 4L80 0v2L2 80H0v-2zm4 0L80 4v2L6 80H4v-2zm4 0L80 8v2L10 80H8v-2zm4 0l68-68v2L14 80h-2v-2zm4 0l64-64v2L18 80h-2v-2zm4 0l60-60v2L22 80h-2v-2zm4 0l56-56v2L26 80h-2v-2zm4 0l52-52v2L30 80h-2v-2zm4 0l48-48v2L34 80h-2v-2zm4 0l44-44v2L38 80h-2v-2zm4 0l40-40v2L42 80h-2v-2zm4 0l36-36v2L46 80h-2v-2zm4 0l32-32v2L50 80h-2v-2zm4 0l28-28v2L54 80h-2v-2zm4 0l24-24v2L58 80h-2v-2zm4 0l20-20v2L62 80h-2v-2zm4 0l16-16v2L66 80h-2v-2zm4 0l12-12v2L70 80h-2v-2zm4 0l8-8v2L74 80h-2v-2zm4 0l4-4v2L78 80h-2v-2zm4 0v2L80 80h-2v-2z'/%3E%3C/g%3E%3C/svg%3E");
+        }
+        
+        .custom-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        .btn-primary {
+            background-color: #27ae60;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #2ecc71;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background-color: #3498db;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+
+        .custom-input {
+            transition: all 0.3s ease;
+        }
+
+        .custom-input:focus {
+            border-color: #2ecc71;
+            box-shadow: 0 0 0 3px rgba(46, 204, 113, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <header class="hero-pattern text-white py-12 px-4 md:px-0">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 animate__animated animate__fadeInDown">البيئة العراقية</h1>
+            <p class="text-xl md:text-2xl mb-8 animate__animated animate__fadeInUp">معًا لحماية طبيعتنا الجميلة</p>
+        </div>
+    </header>
+
+    <main class="flex-grow container mx-auto mt-8 p-4">
+        <div class="bg-white rounded-lg custom-shadow p-6 mb-8 animate__animated animate__fadeIn">
+            <h2 class="text-2xl font-semibold mb-4 text-green-800">الإبلاغ عن مشكلة بيئية</h2>
+            <p class="mb-6 text-gray-700">ساعدنا في الحفاظ على جمال وصحة بيئتنا العراقية. التقط صورة أو ارفع صورة للإبلاغ عن أي مشكلة بيئية تلاحظها في منطقتك.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-6">
+                <button id="openCamera" class="btn-primary rounded-full py-2 px-6 font-bold text-lg flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    فتح الكاميرا
+                </button>
+                <button id="uploadPhoto" class="btn-secondary rounded-full py-2 px-6 font-bold text-lg flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
+                    رفع صورة
+                </button>
+            </div>
+            
+            <input type="file" id="fileInput" class="hidden" accept="image/*">
+            <video id="camera" class="hidden w-full max-w-md mx-auto mb-4 rounded-lg custom-shadow" autoplay></video>
+            <canvas id="canvas" class="hidden"></canvas>
+            <img id="preview" class="hidden w-full max-w-md mx-auto mb-4 rounded-lg custom-shadow" alt="معاينة الصورة">
+            
+            <div id="captureButtons" class="hidden flex justify-center gap-4 mb-6">
+                <button id="capture" class="btn-primary rounded-full py-2 px-6 font-bold text-lg flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    التقاط الصورة
+                </button>
+                <button id="retake" class="btn-secondary rounded-full py-2 px-6 font-bold text-lg flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    إعادة التقاط
+                </button>
+            </div>
+
+            <form id="reportForm" class="hidden animate__animated animate__fadeIn">
+                <div class="mb-4">
+                    <label for="description" class="block text-gray-700 font-bold mb-2">وصف المشكلة:</label>
+                    <textarea id="description" name="description" rows="4" class="w-full px-3 py-2 text-gray-700 border rounded-lg custom-input" required></textarea>
+                </div>
+                <div class="mb-4">
+                    <label for="location" class="block text-gray-700 font-bold mb-2">الموقع:</label>
+                    <input type="text" id="location" name="location" class="w-full px-3 py-2 text-gray-700 border rounded-lg custom-input" required>
+                </div>
+                <div class="mb-6">
+                    <label for="category" class="block text-gray-700 font-bold mb-2">نوع المشكلة البيئية:</label>
+                    <select id="category" name="category" class="w-full px-3 py-2 text-gray-700 border rounded-lg custom-input" required>
+                        <option value="">اختر نوع المشكلة</option>
+                        <option value="تلوث المياه">تلوث المياه</option>
+                        <option value="تلوث الهواء">تلوث الهواء</option>
+                        <option value="النفايات">النفايات</option>
+                        <option value="قطع الأشجار">قطع الأشجار</option>
+                        <option value="أخرى">أخرى</option>
+                    </select>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn-primary rounded-full py-2 px-6 font-bold text-lg inline-flex items-center">
+                        <svg class="w-6 h-6 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path></svg>
+                        إرسال التقرير
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="bg-white rounded-lg custom-shadow p-6 mb-8 animate__animated animate__fadeIn">
+            <h2 class="text-2xl font-semibold mb-4 text-green-800">آخر التقارير البيئية</h2>
+            <div id="recentReports" class="space-y-4">
+                <!-- سيتم ملء هذا القسم ديناميكيًا بواسطة JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-green-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 البيئة العراقية. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <script>
+        const openCameraBtn = document.getElementById('openCamera');
+        const uploadPhotoBtn = document.getElementById('uploadPhoto');
+        const fileInput = document.getElementById('fileInput');
+        const video = document.getElementById('camera');
+        const canvas = document.getElementById('canvas');
+        const preview = document.getElementById('preview');
+        const captureBtn = document.getElementById('capture');
+        const retakeBtn = document.getElementById('retake');
+        const captureButtons = document.getElementById('captureButtons');
+        const reportForm = document.getElementById('reportForm');
+        const recentReports = document.getElementById('recentReports');
+
+        let stream;
+
+        openCameraBtn.addEventListener('click', async () => {
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                video.srcObject = stream;
+                video.classList.remove('hidden');
+                captureButtons.classList.remove('hidden');
+                preview.classList.add('hidden');
+                reportForm.classList.add('hidden');
+            } catch (err) {
+                console.error('خطأ في الوصول إلى الكاميرا:', err);
+                alert('فشل في الوصول إلى الكاميرا. يرجى التحقق من إعدادات الجهاز الخاص بك.');
+            }
+        });
+
+        uploadPhotoBtn.addEventListener('click', () => {
+            fileInput.click();
+        });
+
+        fileInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    preview.src = e.target.result;
+                    preview.classList.remove('hidden');
+                    video.classList.add('hidden');
+                    captureButtons.classList.add('hidden');
+                    reportForm.classList.remove('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        captureBtn.addEventListener('click', () => {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            canvas.getContext('2d').drawImage(video, 0, 0);
+            preview.src = canvas.toDataURL('image/png');
+            preview.classList.remove('hidden');
+            video.classList.add('hidden');
+            reportForm.classList.remove('hidden');
+        });
+
+        retakeBtn.addEventListener('click', () => {
+            video.classList.remove('hidden');
+            preview.classList.add('hidden');
+            reportForm.classList.add('hidden');
+        });
+
+        reportForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const description = document.getElementById('description').value;
+            const location = document.getElementById('location').value;
+            const category = document.getElementById('category').value;
+            
+            // هنا يمكنك إرسال البيانات إلى الخادم
+            console.log('تم إرسال التقرير:', { description, location, category });
+            
+            // إضافة التقرير إلى قائمة التقارير الأخيرة
+            addRecentReport(description, location, category);
+            
+            // إعادة تعيين النموذج
+            reportForm.reset();
+            preview.classList.add('hidden');
+            reportForm.classList.add('hidden');
+            
+            alert('تم إرسال التقرير بنجاح!');
+        });
+
+        function addRecentReport(description, location, category) {
+            const reportElement = document.createElement('div');
+            reportElement.className = 'bg-green-100 p-4 rounded-lg';
+            reportElement.innerHTML = `
+                <h3 class="font-bold text-green-800">${category}</h3>
+                <p class="text-gray-700">${description}</p>
+                <p class="text-sm text-gray-500">الموقع: ${location}</p>
+            `;
+            recentReports.prepend(reportElement);
+        }
+
+        // إضافة بعض التقارير الوهمية للعرض
+        addRecentReport('تراكم النفايات في شارع الرشيد', 'بغداد', 'النفايات');
+        addRecentReport('تلوث مياه نهر دجلة', 'الموصل', 'تلوث المياه');
+        addRecentReport('انبعاثات دخان كثيفة من أحد المصانع', 'البصرة', 'تلوث الهواء');
+    </script>
+</body>
+</html>
